@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Price chart</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat&family=Poppins&display=swap" rel="stylesheet">
+    <style>
+        body{
+            font-family: "Poppins", sans-serif;
+            background-color: #ffa8B6;
+        }
+
+        .pricing-container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10%;
+            height: 100vh;
+        }
+
+        .pricing-plan{
+            flex: 1;
+            background-color: #ca6bf7;
+            border-radius: 5%;
+            max-width: 400px;
+            padding: 20px;
+        }
+
+        #individual-plan{
+            color: #ffd2d7;
+            font-size: 40px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        #duo-plan{
+            color: #ffc862;
+            font-size: 40px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        #family-plan{
+            color: #a5bbd1;
+            font-size: 40px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .plan-price{
+            color: white;
+            font-size: 20px;
+            margin-bottom: 15px;
+        }
+
+        .plan-features{
+            color:white
+        }
+
+        #individual-button{
+            color:rgb(236, 72, 241);
+            border: none;
+            border-radius: 10px;
+            font-size: 14px;
+        }
+
+        #duo-button{
+            color:#ffc862;
+            border: none;
+            border-radius: 10px;
+            font-size: 14px;
+        }
+
+        #family-button{
+            color:#a5bb;
+            border: none;
+            border-radius: 10px;
+            font-size: 14px;
+        }
+
+        @media(max-width: 1250px){
+            .pricing-container{
+                flex-direction: column;
+                height: 100%;
+                gap: 50px;
+            }
+        }
+
+    </style>
+     
+</head>
+<body>
+    <div class="pricing-container">
+        <div class="pricing-plan">
+            <div id="individual-plan">Individual</div>
+            <div class="plan-price">₹139/month</div>
+            <ul class="plan-features">
+                <li>1 Premium account</li>
+                <li>Cancel anytime</li>
+                <li>Subscribe or one time payment</li>
+            </ul>
+            <button id="individual-button">Get Premium Individual</button>
+        </div>
+
+        <div class="pricing-plan">
+            <div id="duo-plan">Duo</div>
+            <div class="plan-price">₹179/month</div>
+            <ul class="plan-features">
+                <li>2 Premium accounts</li>
+                <li>Cancel anytime</li>
+                <li>Subscribe or one time payment</li>
+            </ul>
+            <button id="duo-button">Get Premium Duo</button>
+        </div>
+
+        <div class="pricing-plan">
+            <div id="family-plan">Family</div>
+            <div class="plan-price">₹229/month</div>
+            <ul class="plan-features">
+                <li>Up to 6 Premium accounts</li>
+                <li>Control content marked as explicit</li>
+                <li>Cancel anytime</li>
+                <li>Subscribe or one time payment</li>
+            </ul>
+            <button id="family-button">Get Premium Family</button>
+        </div>
+    </div>
+</body>
+</html>
